@@ -1,0 +1,28 @@
+/*Estilos componente*/
+.contendor_imagen{
+    width: 620px;
+    height: 420px;
+    border-radius: 12px;
+    border: 10px solid palevioletred;
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .contenedor1, contenedor2, contenedor3{
+    color:#43281c
+  }
+   .contenedor2{
+    color:#43281c
+
+  }
+  
+  .contenedor3{
+    color:#43281c
+  }
+  
