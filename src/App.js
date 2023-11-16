@@ -1,11 +1,31 @@
+import { useState } from 'react';
 import "./App.css";
 import "./info.css";
 import "./texto.css";
 import Info from "./componentes/Info";
 import Texto from "./componentes/Texto";
 import Texto2 from "./componentes/Texto2";
+import Contador from "./componentes/agregar";
+import Saludo from "./componentes/saludo";
+import Suscribirse from "./componentes/suscribirse";
+import FormInput from './componentes/formInput';
+
 
 function App() {
+
+  /* Formulario */
+  const [message, setMessage] = useState('');
+
+  const initialValues = {
+    firstName: '',
+    lastName: '',
+    emailAddress: '',
+  };
+
+  const submit = (form) => {
+    setMessage(`Gracias por suscribirte, ${form.firstName} ${form.lastName}! Te enviamos un correo a ${form.emailAddress}.`);
+  };
+
   return (
     <div className="App">
       <div className="contenedor_main">
@@ -22,6 +42,25 @@ function App() {
           texto="Las zarigüeyas son de gran beneficio debido a que son controladores de serpientes venenosas y dispersores de semillas, son omnívoros (se alimentan de animales y plantas) y cumplen un rol importante para el medio ambiente.
         ¡Cuidemos de ellas!"
         />
+        <Contador />
+
+        
+         <h1 className='form_title'>Suscribirse</h1>
+
+      <Suscribirse submit={submit} initialValues={initialValues}>
+        <FormInput 
+          label="Nombre" 
+          name="firstName" />
+        <FormInput 
+          label="Apellido" 
+          name="lastName" />
+        <FormInput 
+          label="E-mail" 
+          type="email" 
+          name="emailAddress" />
+      </Suscribirse>
+
+      <p className='form_message'>{message}</p>
       </div>
     </div>
   );

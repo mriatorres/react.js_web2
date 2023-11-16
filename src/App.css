@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
   background-color: #f7cce1;
@@ -6,6 +7,7 @@ background-image:  linear-gradient(135deg, #fbf2c0 25%, transparent 25%), linear
 background-position:  10px 0, 10px 0, 0 0, 0 0;
 background-size: 20px 20px;
 background-repeat: repeat;
+padding-bottom: 60px;
 }
 
 .App-logo {
@@ -34,9 +36,20 @@ background-repeat: repeat;
   color: #df0000;
 }
 
-.title{
+.title, .form_title{
   color: #43281c;
   padding-top: 40px;
+}
+
+.form_message{
+  font-size: 20px;
+  font-weight: bold;
+  color: #550c18;
+  width: 800px;
+  height:60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 

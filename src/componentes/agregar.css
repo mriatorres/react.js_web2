@@ -1,0 +1,32 @@
+
+.donate_container{
+    background-color: #fffdd0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 160px;
+    border-radius: 12px;
+}
+
+.title_donate{
+    padding-top: 2%;
+    color: palevioletred;
+}
+
+.span_donate{
+    font-size: large;
+    font-weight: 600;
+    color: #43281c;
+}
+
+.button_donate{
+    margin-top: 20px;
+    width: 260px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: #ffb347;
+    font-weight: bold;
+    color: #43281c;
+    text-align: center;
+}
